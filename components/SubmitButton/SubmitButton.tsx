@@ -25,7 +25,7 @@ type Props = {
 
 const SubmitButton = ({ action, text }: Props) => {
   const [open, setOpen] = useState(false);
-  const [state, formAction] = useFormState(action, {});
+  const [state, formAction] = useFormState<any, FormData>(action, null);
   const [alertMessage, setAlertMessage] = useState('');
 
   useEffect(() => {

@@ -31,7 +31,7 @@ const MultipleChoice = ({
                 name={`${questionIndex}`}
                 value={item.value}
                 className='hidden'
-                defaultChecked={answerValue?.includes(item.value)}
+                // defaultChecked={answerValue?.includes(item.value)}
               />
               {item.description}
             </label>
@@ -45,7 +45,7 @@ const MultipleChoice = ({
                 type='checkbox'
                 name={`${questionIndex}`}
                 value={item.value}
-                defaultChecked={answerValue?.includes(item.value)}
+                // defaultChecked={answerValue?.includes(item.value)}
               />
               <label>{item.description}</label>
             </div>
